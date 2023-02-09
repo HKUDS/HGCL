@@ -5,7 +5,7 @@ Mengru Chen, Chao Huang, Yong Xu, Lianghao Xia, Ronghua Luo, Wei Wei (2023). **H
 
 ### Inroduction 
 Heterogeneous Graph Contrastive Learning for Recommendation (HGCL) devises multi-relation graph contrastive learning model combining with personalized knowledge tansformation across views, to adaptively discriminate the difference and similarity between the collaborative relation for heterogeneous graph information networks, and effectively learn the comprehensive and high-quality nodes’ representations for recommendation predictions 
-Citation  
+### Citation  
 If you want to use our codes and datasets in your research, please cite:
 @ inproceedings {hgcl2023, 
 	Author   = {Chen, Mengru and 
@@ -18,7 +18,7 @@ Wei, Wei},
 booktitle  = {Proceedings of the 16th {ACM} international {WSDM} Conference on Web-Inspired Research involving Search and Data Mining, {SIGIR} 2023, Singapore, during February 27 to March 3, 2023.},
 year      = {2023},
 }
-Environment
+### Environment
 The codes of HGCL are implemented and tested under the following development environment: 
 pyTorch:
 	Python=3.7.10
@@ -26,15 +26,15 @@ pyTorch:
 	Numpy=1.20.3
 	Scipy=1.6.2
 ### Datasets
-We utilized three datasets to evaluate HGCL: Yelp, Epinions, and CiaoDVD. Following the common settings of implicit feedback, if user u_ihas rated item v_j, then the element (u_i,v_j) is set as 1, otherwise 0. We filtered out users and items with too few interactions. The datasets are divided into training set and testing set by 1: (n-1).
+We utilized three datasets to evaluate HGCL: *Yelp*,*Epinions*, and *CiaoDVD*. Following the common settings of implicit feedback, if user u_ihas rated item v_j, then the element (u_i,v_j) is set as 1, otherwise 0. We filtered out users and items with too few interactions. The datasets are divided into training set and testing set by 1: (n-1).
 ### How to Run the Code
 Please unzip the datasets first. Also you need to create the History/ and the Models/ directories. The command to train HGCL on the Yelp/Epinions/CiaoDVD dataset is as follows. The commands specify the hyperparameter settings that generate the reported results in the paper.
 	Yelp
-python main.py --dataset Yelp --ssl_temp 0.5 --ssl_ureg 0.06 --ssl_ireg 0.07 --lr 0.058 --reg 0.05 --ssl_beta 0.45 --rank 3
-	Epinions 
-python main.py --dataset Epinions --ssl_temp 0.5 --ssl_ureg 0.04 --ssl_ireg 0.05 --lr 0.055 --reg 0.043 --ssl_beta 0.32 --rank 3
+`python main.py --dataset Yelp --ssl_temp 0.5 --ssl_ureg 0.06 --ssl_ireg 0.07 --lr 0.058 --reg 0.05 --ssl_beta 0.45 --rank 3`
+	Epinions
+`python main.py --dataset Epinions --ssl_temp 0.5 --ssl_ureg 0.04 --ssl_ireg 0.05 --lr 0.055 --reg 0.043 --ssl_beta 0.32 --rank 3`
 	CiaoDVD
-python main.py --dataset CiaoDVD --ssl_temp 0.6 --ssl_ureg 0.04 --ssl_ireg 0.05 --lr 0.055 --reg 0.065 --ssl_beta 0.3 --rank 3
+`python main.py --dataset CiaoDVD --ssl_temp 0.6 --ssl_ureg 0.04 --ssl_ireg 0.05 --lr 0.055 --reg 0.065 --ssl_beta 0.3 --rank 3`
 
 Important arguments:
 	ssl_temp : It is the temperature factor in the InfoNCE loss in our contrastive learning. The value is selected from {0.1, 0.3, 0.45, 0.5, 0.55,0.6, 0.65}.
