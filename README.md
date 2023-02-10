@@ -1,5 +1,5 @@
 # HGCL
- ![image](https://user-images.githubusercontent.com/63046458/218037666-720fd450-bdbd-496d-b9e6-fd382eb58073.png)
+ 
  <p>
   <img src="imgs/framework_1.pdf" width="1000">
   <br />
