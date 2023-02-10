@@ -1,5 +1,11 @@
 # HGCL
  ![image](https://user-images.githubusercontent.com/63046458/218037666-720fd450-bdbd-496d-b9e6-fd382eb58073.png)
+ <p>
+  <img src="imgs/framework_1.pdf" width="1000">
+  <br />
+</p>
+
+<hr>
 Torch version is available now!
 This repository contains pyTorch code and datasets for the paper:
 Mengru Chen, Chao Huang, Yong Xu, Lianghao Xia, Ronghua Luo, Wei Wei (2023). **Heterogeneous Graph Contrastive Learning for Recommendation**, *Paper in arXiv, Paper in ACM. In SIGIR'22, Madrid, Spain, July 11-15*, 2023
