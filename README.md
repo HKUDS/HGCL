@@ -9,7 +9,7 @@ Torch version is available now!
 This repository contains pyTorch code and datasets for the paper:
 Mengru Chen, Chao Huang, Yong Xu, Lianghao Xia, Ronghua Luo, Wei Wei (2023). **Heterogeneous Graph Contrastive Learning for Recommendation**, *Paper in arXiv, Paper in ACM. In SIGIR'22, Madrid, Spain, July 11-15*, 2023
 
-### Inroduction 
+### Inroduction  
 **Heterogeneous Graph Contrastive Learning for Recommendation (HGCL)** devises multi-relation graph contrastive learning model combining with personalized knowledge tansformation across views, to adaptively discriminate the difference and similarity between the collaborative relation for heterogeneous graph information networks, and effectively learn the comprehensive and high-quality nodes’ representations for recommendation predictions 
 ### Citation  
 If you want to use our codes and datasets in your research, please cite:
@@ -34,7 +34,7 @@ pyTorch:
 	Numpy=1.20.3
 	Scipy=1.6.2
 ### Datasets
-We utilized three datasets to evaluate HGCL: *Yelp*,*Epinions*, and *CiaoDVD*. Following the common settings of implicit feedback, if user u_ihas rated item v_j, then the element (u_i,v_j) is set as 1, otherwise 0. We filtered out users and items with too few interactions. The datasets are divided into training set and testing set by 1: (n-1).
+We utilized three datasets to evaluate HGCL: *Yelp*, *Epinions*, and *CiaoDVD*. Following the common settings of implicit feedback, if user u_ihas rated item v_j, then the element (u_i,v_j) is set as 1, otherwise 0. We filtered out users and items with too few interactions. The datasets are divided into training set and testing set by 1: (n-1).
 ### How to Run the Code
 Please unzip the datasets first. Also you need to create the History/ and the Models/ directories. The command to train HGCL on the Yelp/Epinions/CiaoDVD dataset is as follows. The commands specify the hyperparameter settings that generate the reported results in the paper.
 * Yelp
