@@ -1,7 +1,5 @@
 # HGCL
-```
  ![image](https://user-images.githubusercontent.com/63046458/218037666-720fd450-bdbd-496d-b9e6-fd382eb58073.png)
-```
 Torch version is available now!
 This repository contains pyTorch code and datasets for the paper:
 Mengru Chen, Chao Huang, Yong Xu, Lianghao Xia, Ronghua Luo, Wei Wei (2023). **Heterogeneous Graph Contrastive Learning for Recommendation**, *Paper in arXiv, Paper in ACM. In SIGIR'22, Madrid, Spain, July 11-15*, 2023
@@ -55,7 +53,5 @@ python main.py --dataset CiaoDVD --ssl_temp 0.6 --ssl_ureg 0.04 --ssl_ireg 0.05 
 * `--rank` A hyperparameter of the dimension of low rank matrix decomposition, This parameter is recommended to tune from{1, 2, 3, 4, 5}.
 ### Experimental Results
 Performance comparison of all methods on different datasets in terms of *NDCG* and *HR*
-```
 ![image](https://user-images.githubusercontent.com/63046458/218047577-1c0c8769-fb85-4c5a-89bd-eec5925658b8.png)
-```
 
