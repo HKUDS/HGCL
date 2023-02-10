@@ -58,7 +58,14 @@ python main.py --dataset CiaoDVD --ssl_temp 0.6 --ssl_ureg 0.04 --ssl_ireg 0.05 
 * `--ssl_beta` This is the balance cofficient of the total contrastive loss , which is tuned from{0.2, 0.27, 0.3, 0.32, 0.4, 0.45, 0.48, 0.5}.
 * `--rank` A hyperparameter of the dimension of low rank matrix decomposition, This parameter is recommended to tune from{1, 2, 3, 4, 5}.
 ### Experimental Results
-Performance comparison of all methods on different datasets in terms of *NDCG* and *HR*
+Performance comparison of all methods on different datasets in terms of *NDCG* and *HR*:
+|        Data        | Cora         | Citeseer     | PubMed       | Ogbn-arxiv     | PPI            | Reddit         |
+| ------------------ | ------------ | ------------ | ------------ | -------------- | -------------- | -------------- |
+| DGI                | 82.3±0.6     | 71.8±0.7     | 76.8±0.6     | 70.34±0.16     | 63.80±0.20     | 94.0±0.10      |
+| MVGRL              | 83.5±0.4     | 73.3±0.5     | 80.1±0.7     | -              | -              | -              |
+| BGRL               | 82.7±0.6     | 71.1±0.8     | 79.6±0.5     | 71.64±0.12     | 73.63±0.16     | 94.22±0.03     |
+| CCA-SSG            | 84.0±0.4     | 73.1±0.3     | 81.0±0.4     | 71.24±0.20     | 73.34±0.17     | 95.07±0.02     |
+| **GraphMAE(ours)** | **84.2±0.4** | **73.4±0.4** | **81.1±0.4** | **71.75±0.17** | **74.50±0.29** | **96.01±0.08** |
 <p>
   <img src="imgs/results.jpg" width="1000">
   <br />
