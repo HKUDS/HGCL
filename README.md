@@ -53,3 +53,5 @@ python main.py --dataset CiaoDVD --ssl_temp 0.6 --ssl_ureg 0.04 --ssl_ireg 0.05 
 * `--rank` A hyperparameter of the dimension of low rank matrix decomposition, This parameter is recommended to tune from{1, 2, 3, 4, 5}.
 ### Experimental Results
 Performance comparison of all methods on different datasets in terms of *NDCG* and *HR*
+![image](https://user-images.githubusercontent.com/63046458/218047577-1c0c8769-fb85-4c5a-89bd-eec5925658b8.png)
+
