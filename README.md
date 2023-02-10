@@ -63,5 +63,5 @@ Performance comparison of all methods on different datasets in terms of *NDCG* a
   <img src="imgs/results.jpg" width="1000">
   <br />
 </p>
-![image](https://user-images.githubusercontent.com/63046458/218047577-1c0c8769-fb85-4c5a-89bd-eec5925658b8.png)
+
 
