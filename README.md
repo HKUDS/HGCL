@@ -6,8 +6,7 @@
 </p>
 
 Torch version is available now!
-This repository contains pyTorch code and datasets for the paper:
-Mengru Chen, Chao Huang, Yong Xu, Lianghao Xia, Ronghua Luo, Wei Wei (2023). **Heterogeneous Graph Contrastive Learning for Recommendation**, *Paper in arXiv, Paper in ACM. In SIGIR'22, Madrid, Spain, July 11-15*, 2023
+This repository contains pyTorch code and datasets for the paper: **Heterogeneous Graph Contrastive Learning for Recommendation**, *Paper in arXiv, Paper in ACM. In WSDM'23, Singapore, 2023
 
 ### Inroduction  
 **Heterogeneous Graph Contrastive Learning for Recommendation (HGCL)** devises multi-relation graph contrastive learning model combining with personalized knowledge tansformation across views, to adaptively discriminate the difference and similarity between the collaborative relation for heterogeneous graph information networks, and effectively learn the comprehensive and high-quality nodes’ representations for recommendation predictions 
@@ -15,15 +14,10 @@ Mengru Chen, Chao Huang, Yong Xu, Lianghao Xia, Ronghua Luo, Wei Wei (2023). **H
 If you want to use our codes and datasets in your research, please cite:
 ```
 @ inproceedings {hgcl2023, 
-	Author   = {Chen, Mengru and 
-Huang, Chao and 
-Xu, Yong and
-Xia, Lianghao and
-Luo, Ronghua and
-Wei, Wei},
-   Title     = { Heterogeneous Graph Contrastive Learning for Recommendation}, 
-booktitle  = {Proceedings of the 16th {ACM} international {WSDM} Conference on Web-Inspired Research involving Search and Data Mining, {SIGIR} 2023, Singapore, during February 27 to March 3, 2023.},
-year      = {2023},
+    Author = {Chen, Mengru and Huang, Chao and Xia, Lianghao and Wei, Wei and Xu, Yong and Luo, Ronghua},
+    Title = {Heterogeneous Graph Contrastive Learning for Recommendation}, 
+    booktitle = {International Conference on Web Search and Data Mining (WSDM)},
+    year = {2023},
 }
 ```
 ### Environment
