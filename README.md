@@ -27,6 +27,10 @@ pyTorch:
 	Scipy=1.6.2
 ### Datasets
 We utilized three datasets to evaluate HGCL: *Yelp*, *Epinions*, and *CiaoDVD*. Following the common settings of implicit feedback, if user u_ihas rated item v_j, then the element (u_i,v_j) is set as 1, otherwise 0. We filtered out users and items with too few interactions. The datasets are divided into training set and testing set by 1: (n-1).
+
+You can download all three datasets from [Google Drive](https://drive.google.com/drive/folders/1s6LGibPnal6gMld5t63aK4J7hnVkNeDs?usp=sharing). 
+Feel free to fire an issue if this link doesn't work.
+
 ### How to Run the Code
 Please unzip the datasets first. Also you need to create the History/ and the Models/ directories. The command to train HGCL on the Yelp/Epinions/CiaoDVD dataset is as follows. The commands specify the hyperparameter settings that generate the reported results in the paper.
 * Yelp
@@ -41,6 +45,8 @@ python main.py --dataset Epinions --ssl_temp 0.5 --ssl_ureg 0.04 --ssl_ireg 0.05
 ```
 python main.py --dataset CiaoDVD --ssl_temp 0.6 --ssl_ureg 0.04 --ssl_ireg 0.05 --lr 0.055 --reg 0.065 --ssl_beta 0.3 --rank 3
 ```
+
+
 ### Important arguments
 * `--ssl_temp` It is the temperature factor in the InfoNCE loss in our contrastive learning. The value is selected from {0.1, 0.3, 0.45, 0.5, 0.55,0.6, 0.65}.
 * `--ssl_ureg, ssl_ireg` They are the weights for the contrastive learning loss of user’s and item’s aspect respectively. The value of this pair are tuned from 
