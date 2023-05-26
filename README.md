@@ -8,16 +8,6 @@ This repository contains pyTorch code and datasets for the paper: **Heterogeneou
 ### Inroduction  
 **Heterogeneous Graph Contrastive Learning for Recommendation (HGCL)** advances the recommender system with heterogeneous graph contrastive learning. HGCL integrates meta network with contrastive learning for adaptive augmentation to enable user-specific and item-specific knowledge transfer. It advances graph contrastive learning with customized cross-view augmentation.
 
-### Citation  
-Please kindly cite our paper if you find this paper and the codes helpful.
-```
-@ inproceedings {hgcl2023, 
-    Author = {Chen, Mengru and Huang, Chao and Xia, Lianghao and Wei, Wei and Xu, Yong and Luo, Ronghua},
-    Title = {Heterogeneous Graph Contrastive Learning for Recommendation}, 
-    booktitle = {International Conference on Web Search and Data Mining (WSDM)},
-    year = {2023},
-}
-```
 ### Environment
 The codes of HGCL are implemented and tested under the following development environment: 
 pyTorch:
