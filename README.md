@@ -63,4 +63,14 @@ Performance comparison of all methods on different datasets in terms of *NDCG* a
   <br />
 </p>
 
-
+## Citation
+If you find this work helpful to your research, please kindly consider citing our paper.
+```
+@inproceedings{chen2023heterogeneous,
+  title={Heterogeneous graph contrastive learning for recommendation},
+  author={Chen, Mengru and Huang, Chao and Xia, Lianghao and Wei, Wei and Xu, Yong and Luo, Ronghua},
+  booktitle={Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining},
+  pages={544--552},
+  year={2023}
+}
+```
